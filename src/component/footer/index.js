@@ -12,7 +12,7 @@ import logoOne from '../../assets/img/wota-logo-1.svg';
 import { Link as Scroll } from 'react-scroll'
 
 
-export default function Footer() {
+export default function Footer({ setNav }) {
 
     const [storeModal, setStoreModal] = useState(false)
 
@@ -39,22 +39,22 @@ export default function Footer() {
 
                 <div className="row footer-one">
                     <div className=" col-md-4 footer-lists inner_footer_1">
-                        <Scroll to="home" spy={true} smooth={true} className="footer__list">Home</Scroll>
+                        <Scroll to="home" spy={true} smooth={true} className="footer__list" onClick={() => setNav("home")}>Home</Scroll>
                         <Scroll to="sec-1" spy={true} smooth={true} className="footer__list">About</Scroll>
                         <Scroll to="sec-4" spy={true} smooth={true} className="footer__list">Brands</Scroll>
                         <Scroll to="sec-7" spy={true} smooth={true} className="footer__list">Support</Scroll>
                     </div>
                     <div className=" col-md-3 d-flex justify-content-center">
                         <div className="logo-container">
-                            <a href="#" aria-current="page">
+                            <div onClick={() => setNav("home")}>
                                 <img src={logoOne} alt="WOTA - Home" />
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-4 footer-lists inner_footer_2">
                         <div onClick={() => setStoreModal(true)} className="footer__list">Mobile App</div>
-                        <a href="#" className="footer__list">Privacy Policy</a>
-                        <a href="#" className="footer__list">Terms &amp; Conditions</a>
+                        <div onClick={() => setNav("pandp")} className="footer__list">Privacy Policy</div>
+                        <div onClick={() => setNav("tandc")} className="footer__list">Terms &amp; Condition</div>
                     </div>
 
                 </div>
@@ -67,7 +67,7 @@ export default function Footer() {
                         <a href="mailto:support@pairwota.com" target="_blank" rel="noreferrer"><img src={ImIcon} alt="WOTA - Home" /></a>
                     </div>
                     <div>
-                        <p className="footer-rights">© WOTA {new Date().getFullYear()}. All rights reserved.</p>
+                        <p className="footer-rights">© PairWOTA {new Date().getFullYear()}. All rights reserved.</p>
                     </div>
 
                 </div>

@@ -6,7 +6,7 @@ import logoOne from '../../assets/img/wota-logo-1.svg';
 import { Link as Scroll } from 'react-scroll'
 
 
-export default function Header() {
+export default function Header({ nav, setNav }) {
 
     const [menu, setMenu] = useState(false)
 
@@ -28,6 +28,12 @@ export default function Header() {
 
                         {/* lists */}
                         <ul className="nav__lists">
+                            {nav !== "home" ?
+                                <li className="nav__list">
+                                    <div className="nav__link" onClick={() => setNav("home")}>Home</div>
+                                </li>
+                                : null
+                            }
                             <li className="nav__list">
                                 <Scroll to="sec-1" spy={true} smooth={true} className="nav__link">About</Scroll>
                             </li>
@@ -53,7 +59,7 @@ export default function Header() {
                                 {/* mobile lists */}
                                 <ul>
                                     <li className="mobile__list">
-                                        <Scroll to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
+                                        <div className="mobile__link" onClick={() => setNav("home")}>Home</div>
                                     </li>
                                     <li className="mobile__list">
                                         <Scroll to="sec-1" spy={true} smooth={true} className="mobile__link">About</Scroll>
@@ -63,6 +69,9 @@ export default function Header() {
                                     </li>
                                     <li className="mobile__list">
                                         <Scroll to="sec-7" spy={true} smooth={true} className="mobile__link">Support</Scroll>
+                                    </li>
+                                    <li className="mobile__list">
+                                        <div className="mobile__link" onClick={() => setNav("home")}>Home</div>
                                     </li>
                                     <li className="mobile__list">
                                         <a href="#" className="mobile__link">Terms &amp; Conditions</a>
@@ -89,7 +98,7 @@ export default function Header() {
                                     {/* mobile lists */}
                                     <ul>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
+                                            <Scroll onClick={() => {setMenu(false);setNav("home")}} to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
                                         </li>
                                         <li className="mobile__list">
                                             <Scroll onClick={() => setMenu(false)} to="sec-1" spy={true} smooth={true} className="mobile__link">About</Scroll>
@@ -101,10 +110,10 @@ export default function Header() {
                                             <Scroll onClick={() => setMenu(false)} to="sec-7" spy={true} smooth={true} className="mobile__link">Support</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <a onClick={() => setMenu(false)} href="#" className="mobile__link">Terms &amp; Conditions</a>
+                                        <div className="mobile__link" onClick={() => {setMenu(false);setNav("tandc")}}>Terms &amp; Conditions</div>
                                         </li>
                                         <li className="mobile__list">
-                                            <a onClick={() => setMenu(false)} href="#" className="mobile__link">Privacy Policy</a>
+                                        <div className="mobile__link" onClick={() => {setMenu(false);setNav("pandp")}}>Privacy Policy</div>
                                         </li>
                                         <li className="mobile__list">
                                             <div className="hero-content-button">
