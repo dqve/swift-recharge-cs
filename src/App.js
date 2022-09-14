@@ -157,7 +157,7 @@ export default function App() {
           <div className='col-md-6 four-text'>
             <div className="position-relative text-container">
               <h2 className='four-header fade-in-in'>Simple, Effective, Fast and Rewarding.</h2>
-              <p className='four-content fade-in-in'>Buying or selling water shouldn't be a hassle thats why the world of thirst app has made it easier for water producers to market and sell their products to a world of ever thirsty consumers.</p>
+              <p className='four-content fade-in-in'>Our simplified onboarding process coupled with the two clicks ordering system has been carefully designed to give you an effective,  fast and rewarding water purchase experience.</p>
             </div>
           </div>
         </div>

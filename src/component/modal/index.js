@@ -381,7 +381,7 @@ export default function Modal({ modal, setModal }) {
                             </div>
                             <div className='row'>
                                 <button color="blue" type='button' className={`col-2 ${loader ? "buttonSub" : "button1"} modal--btn modal--set`} onClick={submitForm}>{loader ? <Loader /> : "Submit"}</button>
-                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => setModal(false)}>Cancel</button>
+                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => setModal(false)}>Close</button>
                             </div>
                         </div>
                     </div>

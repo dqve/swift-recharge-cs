@@ -894,6 +894,14 @@ a {
     line-height: 2.75rem;
   }
 }
+@media only screen and (max-width: 33.5em) {
+  .hero-header {
+    width: 95%;
+  }
+  .hero-content {
+    width: 95%;
+  }
+}
 .section-five {
   min-height: 80vh;
   width: 100%;
@@ -1615,6 +1623,30 @@ select {
   color: rgba(184, 234, 255, 0.4588235294);
 }
 
+@media only screen and (max-width: 300px) {
+  .form div input {
+    width: 50%;
+  }
+  .form div select {
+    width: 50%;
+  }
+  .form .row {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .form div input {
+    width: 70%;
+  }
+  .form div select {
+    width: 70%;
+  }
+  .form div .company-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /**** ANIMS ****/
 .fade-in-in {
   -webkit-animation: fadeInIn 1.75s;

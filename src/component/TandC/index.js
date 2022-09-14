@@ -1,8 +1,13 @@
 import React from 'react'
 import DOMPurify from 'dompurify'
+import * as Scroller from 'react-scroll'
 
 
 export default function TandC() {
+
+    React.useEffect(() => {
+        Scroller.animateScroll.scrollToTop()
+      }, [])
 
         const tandcHTML = `<style>
         [data-custom-class='body'],

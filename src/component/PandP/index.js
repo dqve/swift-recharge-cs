@@ -1,8 +1,13 @@
 import React from 'react'
 import DOMPurify from 'dompurify'
+import * as Scroller from 'react-scroll'
 
 
 export default function PandP() {
+
+    React.useEffect(() => {
+        Scroller.animateScroll.scrollToTop()
+      }, [])
 
         const theHTML = `<style>
         [data-custom-class='body'],
