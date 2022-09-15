@@ -23,6 +23,9 @@
   "devDependencies": {
     "@babel/runtime": "7.13.8"
   },
+  "engines" : { 
+    "npm" : ">=18.0.0"
+  },
   "scripts": {
     "startOld": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
