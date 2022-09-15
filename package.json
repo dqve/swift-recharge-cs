@@ -24,7 +24,8 @@
     "@babel/runtime": "7.13.8"
   },
   "engines" : { 
-    "npm" : ">=18.0.0"
+    "node" : ">=18.0.0",
+    "npm" : ">=8.0.0"
   },
   "scripts": {
     "startOld": "react-scripts --openssl-legacy-provider start",
