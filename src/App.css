@@ -433,6 +433,7 @@ a {
   }
   .hero-inner {
     height: 100%;
+    --bs-gutter-x: 0;
   }
   .hero-inner .hero-text {
     display: flex;
@@ -895,11 +896,14 @@ a {
   }
 }
 @media only screen and (max-width: 33.5em) {
+  .modal {
+    padding: 25px 0;
+  }
   .hero-header {
-    width: 95%;
+    width: 100%;
   }
   .hero-content {
-    width: 95%;
+    width: 100%;
   }
 }
 .section-five {
@@ -1275,9 +1279,14 @@ a {
     width: 100%;
     height: 100%;
   }
+  .modal .modal--inner .modal--content .modal--cancel .modal .modal--inner .modal--content .modal--cancel span .modal .modal--inner .modal--content .qr_container .modal .modal--inner .modal--content .form-box .qr-error {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
   .modal .modal--inner .modal--content .modal--cancel .modal .modal--inner .modal--content .modal--cancel span .modal .modal--inner .modal--content .qr_container .modal .modal--inner .modal--content .qr-info {
     font-size: 3rem;
     margin: 3rem 0;
+    text-align: center;
   }
   .modal .modal--inner .modal--content .modal--cancel .modal .modal--inner .modal--content .modal--cancel span .modal .modal--inner .modal--content .qr_container .modal .modal--inner .modal--content .qr-info .modal .modal--inner .modal--content .qr-code {
     width: 35rem;
@@ -1432,6 +1441,7 @@ a {
   font-size: 2.5rem;
   padding: 5rem 0;
   font-weight: 500;
+  text-align: center;
 }
 .modal .modal--inner .modal--content .qr-code {
   width: 24rem;
@@ -1456,10 +1466,44 @@ a {
 
 .form {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form .form-box {
-  width: 40rem;
+  position: relative;
+  width: 70%;
+  height: auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  border-radius: 0.5rem;
+  margin: 20px 0px;
+  color: #FFF8F1;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.form .form-box .form-cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.form .form-box .form-cancel span {
+  width: 1.5rem;
+  height: 0.2rem;
+  display: block;
+  background-color: #eeeeee;
+}
+.form .form-box .form-cancel span:nth-child(1) {
+  transform: translateY(0px) translateX(15px) rotate(-45deg);
+}
+.form .form-box .form-cancel span:nth-child(2) {
+  transform: translateY(0.5px) rotate(45deg);
 }
 
 .form div label {
@@ -1523,6 +1567,7 @@ select {
   font-size: 1.6rem;
   transition: 0.2s all ease;
   border: none;
+  width: auto;
 }
 
 .form .buttonSub {
@@ -1547,6 +1592,7 @@ select {
   font-size: 1.6rem;
   transition: 0.2s all ease;
   border: none;
+  width: auto;
 }
 
 .text-container {
@@ -1623,17 +1669,6 @@ select {
   color: rgba(184, 234, 255, 0.4588235294);
 }
 
-@media only screen and (max-width: 300px) {
-  .form div input {
-    width: 50%;
-  }
-  .form div select {
-    width: 50%;
-  }
-  .form .row {
-    flex-direction: column;
-  }
-}
 @media only screen and (max-width: 560px) {
   .form div input {
     width: 70%;
@@ -1645,6 +1680,34 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .form div input {
+    width: 80%;
+  }
+  .form div select {
+    width: 80%;
+  }
+  .form .row {
+    flex-direction: column;
+  }
+  .form .form-box .form-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .form .form-box .form-cancel span {
+    width: 1.5rem;
+    height: 0.2rem;
+    display: block;
+    background-color: #eeeeee;
+  }
+  .form .form-box .form-cancel span:nth-child(1) {
+    transform: translateY(0px) translateX(15px) rotate(-45deg);
+  }
+  .form .form-box .form-cancel span:nth-child(2) {
+    transform: translateY(0.5px) rotate(45deg);
   }
 }
 /**** ANIMS ****/

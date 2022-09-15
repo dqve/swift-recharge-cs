@@ -252,6 +252,8 @@ export default function Modal({ modal, setModal }) {
         { name: 'Zimbabwe', code: 'ZW' }
     ])
 
+    const [error, setError] = useState("none")
+
     const [state, setState] = useState({
         country: "",
         name: "",
@@ -283,7 +285,7 @@ export default function Modal({ modal, setModal }) {
     }
 
     const onFileUpload = async () => {
-
+        setLoader(true)
         console.log("clicked")
 
         const formData = new FormData();
@@ -297,10 +299,13 @@ export default function Modal({ modal, setModal }) {
         })
             .then(response => {
                 console.log(response);
-            })
+                setLoader(false)
+                setError("succcess")
+            }).catch(() => { setError("error");  })
     };
 
     const pushDetaills = async () => {
+        setLoader(true)
         axios.post('https://sheet.best/api/sheets/2763d9a6-cda5-4dab-a190-a812a482d771', {
             country: state.country,
             name: state.name,
@@ -312,16 +317,17 @@ export default function Modal({ modal, setModal }) {
         })
             .then(response => {
                 console.log(response);
-                alert("Your details was saved successfully.")
-            })
+                setLoader(false)
+                setError("succcess")
+            }).catch(() => { setError("error");  })
     }
 
     const submitForm = async () => {
-        setLoader(true)
+        
         await pushDetaills()
         await onFileUpload()
             .then(() => setLoader(false))
-            .catch(() => alert("Something went wrong, please try again."))
+            .catch(() => { setError("error");  })
     }
 
     return (
@@ -331,17 +337,23 @@ export default function Modal({ modal, setModal }) {
             <div className="modal--inner">
                 <div className="modal--content">
                     <div className="qr_container">
-                        <div className="modal--cancel modal--set" onClick={() => setModal(false)}>
+                        <div className="modal--cancel modal--set" onClick={() => {setError("none"); setModal(false)}}>
                             <span></span>
                             <span></span>
                         </div>
                         {/* end of hamburger */}
 
                         <div className="form">
-                            <div className='form-box'>
-
+                            <h3 className="qr-info"> You are one step away from Joining our partners.<br/> Kindly input the following details.</h3>
+                            <div className='form-box' style={error == "succcess" ?{backgroundColor: "#007400"} : error == "error"? {backgroundColor: "#bc4b55"} : {display: "none"} }>
+                            <h4 className="qr-error"> {
+                            `${error == "succcess" ? "Your registration was successful.": error == "error" ? "Your registration was not successful." : ""}`
+                            }</h4>
+                            <div className="form-cancel" onClick={() => {setError("none")}}>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <h3 className="qr-info"> You are one step away from Joining our partners.</h3>
+                            </div>
                             <div>
                                 <label>country</label>
 
@@ -355,23 +367,23 @@ export default function Modal({ modal, setModal }) {
                             </div>
                             <div>
                                 <label>company name</label>
-                                <input required placeholder='Enter your company name' type="text" name="name" value={state.name} onChange={changeHandler} />
+                                <input required placeholder='Company name' type="text" name="name" value={state.name} onChange={changeHandler} />
                             </div>
                             <div>
                                 <label>company address</label>
-                                <input required placeholder='Enter your company address' type="text" name="address" value={state.address} onChange={changeHandler} />
+                                <input required placeholder='Company address' type="text" name="address" value={state.address} onChange={changeHandler} />
                             </div>
                             <div>
                                 <label>contact email</label>
-                                <input required placeholder='Enter your contact email' type="email" name="email" value={state.email} onChange={changeHandler} />
+                                <input required placeholder='Contact email' type="email" name="email" value={state.email} onChange={changeHandler} />
                             </div>
                             <div>
                                 <label>phone number</label>
-                                <input required placeholder='Enter your phone number' type="text" name="phone" value={state.phone} onChange={changeHandler} />
+                                <input required placeholder='Phone number' type="text" name="phone" value={state.phone} onChange={changeHandler} />
                             </div>
                             <div>
                                 <label>Nafdac Reg No</label>
-                                <input required placeholder='Enter your Nafdac Reg No' type="text" name="nafdac" value={state.nafdac} onChange={changeHandler} />
+                                <input required placeholder='Nafdac Reg No' type="text" name="nafdac" value={state.nafdac} onChange={changeHandler} />
                             </div>
                             <div>
                                 <div className='company-logo'>
@@ -381,7 +393,7 @@ export default function Modal({ modal, setModal }) {
                             </div>
                             <div className='row'>
                                 <button color="blue" type='button' className={`col-2 ${loader ? "buttonSub" : "button1"} modal--btn modal--set`} onClick={submitForm}>{loader ? <Loader /> : "Submit"}</button>
-                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => setModal(false)}>Close</button>
+                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => {setError("none");setModal(false)}}>Close</button>
                             </div>
                         </div>
                     </div>

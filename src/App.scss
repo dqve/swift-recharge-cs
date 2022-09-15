@@ -603,6 +603,7 @@ a {
 
   .hero-inner {
     height: 100%;
+    --bs-gutter-x: 0;
 
     .hero-text {
 
@@ -1244,12 +1245,17 @@ a {
 }
 
 @media only screen and (max-width: 33.5em) {
+
+  .modal {
+    padding: 25px 0;
+  }
+
   .hero-header {
-    width: 95%;
+    width: 100%;
   }
 
   .hero-content {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -1764,9 +1770,15 @@ a {
         width: 100%;
         height: 100%;
 
+        .modal .modal--inner .modal--content .form-box .qr-error {
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+
         .modal .modal--inner .modal--content .qr-info {
           font-size: 3rem;
           margin: 3rem 0;
+          text-align: center;
 
           .modal .modal--inner .modal--content .qr-code {
             width: 35rem;
@@ -1994,6 +2006,7 @@ a {
         font-size: 2.5rem;
         padding: 5rem 0;
         font-weight: 500;
+        text-align: center;
       }
 
       .qr-code {
@@ -2025,10 +2038,52 @@ a {
 
 .form {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form .form-box {
-  width: 40rem;
+  position: relative;
+  width: 70%;
+  height: auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  border-radius: 0.5rem;
+
+  margin: 20px 0px;
+  color: #FFF8F1;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+
+  .form-cancel {
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+    span {
+      width: 1.5rem;
+      height: 0.2rem;
+      display: block;
+      background-color: #eeeeee;
+
+      &:nth-child(1) {
+        -webkit-transform: translateY(0px) translateX(15px) rotate(-45deg);
+        transform: translateY(0px) translateX(15px) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        -webkit-transform: translateY(0.5px) rotate(45deg);
+        transform: translateY(0.5px) rotate(45deg);
+      }
+    }
+  }
 }
 
 .form div label {
@@ -2097,6 +2152,7 @@ select {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   border: none;
+  width: auto;
 }
 
 .form .buttonSub {
@@ -2123,7 +2179,7 @@ select {
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   border: none;
-
+  width: auto;
 }
 
 .text-container {
@@ -2190,21 +2246,6 @@ select {
   color: #b8eaff75;
 }
 
-@media only screen and (max-width: 300px) {
-
-  .form div input {
-    width: 50%;
-  }
-
-  .form div select {
-    width: 50%;
-  }
-
-  .form .row {
-    flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 560px) {
 
   .form div input {
@@ -2222,6 +2263,44 @@ select {
   }
 }
 
+
+@media only screen and (max-width: 350px) {
+
+  .form div input {
+    width: 80%;
+  }
+
+  .form div select {
+    width: 80%;
+  }
+
+  .form .row {
+    flex-direction: column;
+  }
+
+  .form .form-box .form-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    span {
+      width: 1.5rem;
+      height: 0.2rem;
+      display: block;
+      background-color: #eeeeee;
+
+      &:nth-child(1) {
+        -webkit-transform: translateY(0px) translateX(15px) rotate(-45deg);
+        transform: translateY(0px) translateX(15px) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        -webkit-transform: translateY(0.5px) rotate(45deg);
+        transform: translateY(0.5px) rotate(45deg);
+      }
+    }
+  }
+}
 
 
 // /* width */
