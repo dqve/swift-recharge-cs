@@ -28,6 +28,7 @@
     "npm" : "8.x"
   },
   "scripts": {
+    "install": "npm install --force",
     "startOld": "react-scripts start",
     "build": "react-scripts build",
     "start": "npm run build && node ./server",
