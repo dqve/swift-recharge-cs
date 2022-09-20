@@ -262,7 +262,7 @@ export default function App() {
               <img src={expProbe} alt="WOTA - Home" />
               <div>
                 <h5>Probe mode</h5>
-                <p>Best for bulk purchases. select a location in the app, create a probe and watch foor offers from sellers! choose an offer, pay, then confirm delivery and rate driver after dellivery.</p>
+                <p>Best for bulk purchases. select a location in the app, create a probe and wait for offers from sellers! choose an offer, pay, then confirm delivery and rate driver after dellivery.</p>
               </div>
             </div>
           </div>

@@ -1714,6 +1714,7 @@ a {
 
   .modal--inner {
     .modal--content {
+      overflow-y: auto;
       text-align: center;
       position: relative;
       z-index: 10000;
@@ -1749,6 +1750,12 @@ a {
         position: relative;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 65em) {
+  .form .form--div {
+    width: 100%;
   }
 }
 
@@ -2061,7 +2068,7 @@ a {
   text-align: center;
 
   .form-cancel {
-    
+
     position: absolute;
     top: 15px;
     right: 15px;

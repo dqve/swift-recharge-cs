@@ -29,7 +29,7 @@
   },
   "scripts": {
     "install": "npm install --force",
-    "startOld": "react-scripts start",
+    "startOld": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "start": "npm run build && node ./server",
     "test": "react-scripts test --env=jsdom",

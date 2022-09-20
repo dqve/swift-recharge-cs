@@ -7,9 +7,9 @@ export default function PandP() {
 
     React.useEffect(() => {
         Scroller.animateScroll.scrollToTop()
-      }, [])
+    }, [])
 
-        const theHTML = `<style>
+    const theHTML = `<style>
         [data-custom-class='body'],
         [data-custom-class='body'] * {
             background: #b9efff !important;
@@ -258,12 +258,7 @@ export default function PandP() {
                     </span></a></span></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><a
                         data-custom-class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL
-                        INFORMATION?</a></span><span data-custom-class="body_text">
-                    <bdt class="block-component"></bdt>
-                </span></a><span style="color: rgb(127, 127, 127);"><span style="color: rgb(89, 89, 89);"><span
-                            data-custom-class="body_text"><span style="color: rgb(89, 89, 89);">
-                                <bdt class="block-component"></bdt>
-                            </span></span></span></span></span></div>
+                        INFORMATION?</a></span></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#cookies"><span
                         style="color: rgb(89, 89, 89);">5. DO WE USE COOKIES AND OTHER TRACKING
                         TECHNOLOGIES?</span></a><span style="color: rgb(127, 127, 127);"><span
@@ -300,9 +295,8 @@ export default function PandP() {
                                 <bdt class="statement-end-if-in-editor"></bdt>
                                 <bdt class="block-component"></bdt>
                             </span></span></span></span></span></div>
-        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><a
-                        data-custom-class="link" href="#privacyrights">9. WHAT ARE YOUR PRIVACY
-                        RIGHTS?</a></span></span></div>
+                        <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#privacyrights"><span
+                                        style="color: rgb(89, 89, 89);">9. WHAT ARE YOUR PRIVACY RIGHTS?</span></a></span></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#DNT"><span
                         style="color: rgb(89, 89, 89);">10. CONTROLS FOR DO-NOT-TRACK FEATURES</span></a></span></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link"
@@ -3148,7 +3142,7 @@ export default function PandP() {
                                                             </div>`
 
 
-        return (
-                <div className=' appear-in' style={{ height: "100%", color: "#00587E !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#bfefff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(theHTML) }}></div>
-        );
+    return (
+        <div className=' appear-in' style={{ height: "100%", color: "#00587E !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#bfefff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(theHTML) }}></div>
+    );
 }

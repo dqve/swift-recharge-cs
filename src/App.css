@@ -1238,6 +1238,7 @@ a {
   background: #00587E;
 }
 .modal .modal--inner .modal--content {
+  overflow-y: auto;
   text-align: center;
   position: relative;
   z-index: 10000;
@@ -1262,6 +1263,11 @@ a {
   position: relative;
 }
 
+@media only screen and (max-width: 65em) {
+  .form .form--div {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 75em) {
   .modal {
     display: none;

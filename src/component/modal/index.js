@@ -354,10 +354,10 @@ export default function Modal({ modal, setModal }) {
                                 <span></span>
                             </div>
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>country</label>
 
-                                <select class="form-select" aria-label="Default select example" name="country" value={state.country} onChange={changeHandler} >
+                                <select className="form-select" aria-label="Default select example" name="country" value={state.country} onChange={changeHandler} >
                                     <option selected>Select your country</option>
                                     {country.map((each, key) =>
                                         <option value={each.name} key={key}>{`${each.name} - ${each.code}`}</option>
@@ -365,30 +365,30 @@ export default function Modal({ modal, setModal }) {
                                     }
                                 </select>
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>company name</label>
                                 <input required placeholder='Company name' type="text" name="name" value={state.name} onChange={changeHandler} />
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>company address</label>
                                 <input required placeholder='Company address' type="text" name="address" value={state.address} onChange={changeHandler} />
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>contact email</label>
                                 <input required placeholder='Contact email' type="email" name="email" value={state.email} onChange={changeHandler} />
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>phone number</label>
                                 <input required placeholder='Phone number' type="text" name="phone" value={state.phone} onChange={changeHandler} />
                             </div>
-                            <div>
+                            <div className="form--div">
                                 <label>Nafdac Reg No</label>
                                 <input required placeholder='Nafdac Reg No' type="text" name="nafdac" value={state.nafdac} onChange={changeHandler} />
                             </div>
                             <div>
                                 <div className='company-logo'>
                                     <span>Upload your company logo</span>
-                                    <input required class="form-control" id="formFileLg" type="file" name="logo" onChange={changeHandler} />
+                                    <input required className="form-control" id="formFileLg" type="file" name="logo" onChange={changeHandler} />
                                 </div>
                             </div>
                             <div className='row'>
