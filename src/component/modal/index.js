@@ -254,6 +254,8 @@ export default function Modal({ modal, setModal }) {
 
     const [error, setError] = useState("none")
 
+    const [url, setUrl] = useState("");
+
     const [state, setState] = useState({
         country: "",
         name: "",
@@ -264,6 +266,7 @@ export default function Modal({ modal, setModal }) {
         logo: null,
         logoUrl: ""
     })
+
 
     const [loader, setLoader] = useState(false)
 
@@ -301,10 +304,10 @@ export default function Modal({ modal, setModal }) {
                 console.log(response);
                 setLoader(false)
                 setError("succcess")
-            }).catch(() => { setError("error");  })
+            }).catch(() => { setError("error"); })
     };
 
-    const pushDetaills = async () => {
+    const pushDetaills = async (url = "") => {
         setLoader(true)
         axios.post('https://sheet.best/api/sheets/2763d9a6-cda5-4dab-a190-a812a482d771', {
             country: state.country,
@@ -313,21 +316,44 @@ export default function Modal({ modal, setModal }) {
             email: state.email,
             phone: state.phone,
             nafdac: state.nafdac,
-            logoUrl: state.logoUrl
+            logoUrl: url
         })
             .then(response => {
                 console.log(response);
                 setLoader(false)
                 setError("succcess")
-            }).catch(() => { setError("error");  })
+            }).catch(() => { setError("error"); })
+    }
+
+    const uploadImage = async () => {
+
+        const data = new FormData()
+        data.append("file", state.logo)
+        data.append("upload_preset", "wota-reg-img")
+        data.append("cloud_name", "drvroqdyh")
+        data.append("name", `${state.name}`)
+        fetch("  https://api.cloudinary.com/v1_1/drvroqdyh/image/upload", {
+            method: "post",
+            body: data
+        })
+            .then(resp => resp.json())
+            .then(data => {
+                setUrl(data.url);
+                pushDetaills(data.url)
+            })
+            .catch(err => console.log(err))
     }
 
     const submitForm = async () => {
-        
-        await pushDetaills()
-        await onFileUpload()
-            .then(() => setLoader(false))
-            .catch(() => { setError("error");  })
+        if (state.country == "" || state.name == "" || state.address == "" || state.email == "" || state.phone == "" || state.nafdac == "" || state.logo == null || state.logoUrl == "") {
+            setError("incomplete")
+        } else {
+            setError("none")
+            await uploadImage()
+                // await pushDetaills()
+                .then(() => setLoader(false))
+                .catch(() => { setError("error"); })
+        }
     }
 
     return (
@@ -337,22 +363,22 @@ export default function Modal({ modal, setModal }) {
             <div className="modal--inner">
                 <div className="modal--content">
                     <div className="qr_container">
-                        <div className="modal--cancel modal--set" onClick={() => {setError("none"); setModal(false)}}>
+                        <div className="modal--cancel modal--set" onClick={() => { setError("none"); setModal(false) }}>
                             <span></span>
                             <span></span>
                         </div>
                         {/* end of hamburger */}
 
                         <div className="form">
-                            <h3 className="qr-info"> You are one step away from Joining our partners.<br/> Kindly input the following details.</h3>
-                            <div className='form-box' style={error == "succcess" ?{backgroundColor: "#007400"} : error == "error"? {backgroundColor: "#bc4b55"} : {display: "none"} }>
-                            <h4 className="qr-error"> {
-                            `${error == "succcess" ? "Your registration was successful.": error == "error" ? "Your registration was not successful." : ""}`
-                            }</h4>
-                            <div className="form-cancel" onClick={() => {setError("none")}}>
-                                <span></span>
-                                <span></span>
-                            </div>
+                            <h3 className="qr-info"> You are one step away from Joining our partners.<br /> Kindly input the following details.</h3>
+                            <div className='form-box' style={error == "succcess" ? { backgroundColor: "#007400" } : error == "error" || error == "incomplete" ? { backgroundColor: "#bc4b55" } : { display: "none" }}>
+                                <h4 className="qr-error"> {
+                                    `${error == "succcess" ? "Your registration was successful." : error == "error" ? "Your registration was not successful." : error == "incomplete"? "Please fill all the available fields.": ""}`
+                                }</h4>
+                                <div className="form-cancel" onClick={() => { setError("none") }}>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                             <div className="form--div">
                                 <label>country</label>
@@ -393,7 +419,7 @@ export default function Modal({ modal, setModal }) {
                             </div>
                             <div className='row'>
                                 <button color="blue" type='button' className={`col-2 ${loader ? "buttonSub" : "button1"} modal--btn modal--set`} onClick={submitForm}>{loader ? <Loader /> : "Submit"}</button>
-                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => {setError("none");setModal(false)}}>Close</button>
+                                <button color="blue" type='button' className=" col-2 button2 modal--btn modal--set" onClick={() => { setError("none"); setModal(false) }}>Close</button>
                             </div>
                         </div>
                     </div>

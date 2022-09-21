@@ -256,9 +256,12 @@ export default function PandP() {
                                 INFORMATION?</span></span>
                         <bdt class="statement-end-if-in-editor"></bdt>
                     </span></a></span></div>
-        <div style="line-height: 1.5;"><span style="font-size: 15px;"><span style="color: rgb(89, 89, 89);"><a
-                        data-custom-class="link" href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL
-                        INFORMATION?</a></span></div>
+                    <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link"
+                    href="#whoshare"><span style="color: rgb(89, 89, 89);">4. <span style="font-size: 15px;"><span
+                                style="color: rgb(89, 89, 89);">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL
+                                INFORMATION</span></span>
+                        <bdt class="statement-end-if-in-editor"></bdt>
+                    </span></a></span></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><a data-custom-class="link" href="#cookies"><span
                         style="color: rgb(89, 89, 89);">5. DO WE USE COOKIES AND OTHER TRACKING
                         TECHNOLOGIES?</span></a><span style="color: rgb(127, 127, 127);"><span
