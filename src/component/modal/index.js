@@ -292,7 +292,7 @@ export default function Modal({ modal, setModal }) {
         formData.append("myFile", state.logo);
 
         console.log(state.logo);
-        axios.post(`${window.location.origin}/api/uploadfile`, formData, {
+        axios.post(`http://localhost:3005/api/uploadfile`, formData, {
             headers: {
                 "content-type": "multipart/form-data",
             },
