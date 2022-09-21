@@ -326,6 +326,7 @@ export default function Modal({ modal, setModal }) {
     }
 
     const uploadImage = async () => {
+        setLoader(true)
 
         const data = new FormData()
         data.append("file", state.logo)

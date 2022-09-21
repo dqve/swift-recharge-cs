@@ -2164,7 +2164,11 @@ select {
 
 .form .buttonSub {
   margin: 0.5rem;
-  padding: 0rem 4rem;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 22.5px;
   border-radius: 2rem;
   background: #0283bb;
   color: #ffffff;
