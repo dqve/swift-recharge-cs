@@ -6,7 +6,7 @@ import "./App.css";
 import './waves.css';
 import React, { useState, useEffect } from 'react';
 
-import ModalVideo from 'react-modal-video'
+import ModalVideo from 'react-modal-video-rv18'
 import * as Scroller from 'react-scroll'
 import { Link as Scroll } from 'react-scroll'
 
