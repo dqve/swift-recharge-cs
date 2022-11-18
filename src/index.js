@@ -5,6 +5,7 @@ import './video.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { inject } from '@vercel/analytics';
 
 
 import App from "./App";
@@ -16,3 +17,4 @@ ReactDOM.render(
   </StrictMode>,
   rootElement
 );
+inject();
