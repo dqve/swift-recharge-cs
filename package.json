@@ -15,7 +15,7 @@
     "react-dom": "18.2.0",
     "react-router-dom": "^5.2.0",
     "react-modal-video": "^1.2.10",
-    "react-parallax-mouse": "1.7.3",
+    "react-parallax-mouse": "^2.0.1",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.7",
     "sass": "^1.54.5",

@@ -95,7 +95,7 @@ export default function App() {
           <div className='col-md-6 hero-img appear-in'>
             <MouseParallaxContainer
               className="parallax"
-              containerStyles={{
+              containerStyle={{
                 width: "100%"
               }}
               resetOnLeave
@@ -103,7 +103,7 @@ export default function App() {
               <MouseParallaxChild
                 factorX={0.05}
                 factorY={0.05}
-                updateStyles={{
+                style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
