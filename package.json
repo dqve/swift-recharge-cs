@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "author": "David Ayo",
   "dependencies": {
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
@@ -12,9 +13,9 @@
     "multer": "^1.4.5-lts.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-modal-video": "^1.2.10",
+    "react-modal-video-rv18": "^1.2.11",
     "react-parallax-mouse": "^2.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.7",
     "sass": "^1.54.5",
@@ -23,12 +24,7 @@
   "devDependencies": {
     "@babel/runtime": "7.13.8"
   },
-  "engines" : { 
-    "node": "16.x",
-    "npm" : "8.x"
-  },
   "scripts": {
-    "install": "npm install --force",
     "startOld": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "start": "npm run build && node ./server",
