@@ -5,7 +5,7 @@ import {
 import "./App.css";
 import './waves.css';
 import React, { useState, useEffect } from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+
 import ModalVideo from 'react-modal-video'
 import * as Scroller from 'react-scroll'
 import { Link as Scroll } from 'react-scroll'

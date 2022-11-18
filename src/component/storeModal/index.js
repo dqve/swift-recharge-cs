@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+
 
 import appstore from '../../assets/img/applestore.svg';
 import googlestore from '../../assets/img/googlestore.svg';

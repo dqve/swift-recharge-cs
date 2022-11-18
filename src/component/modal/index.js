@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+
 import axios from 'axios';
 import { ReactComponent as Loader } from '../../assets/img/loader.svg';
 
