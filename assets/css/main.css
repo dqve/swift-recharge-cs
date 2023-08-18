@@ -153,7 +153,7 @@ a:hover
     width: 100%;
     height: 100%;
 
-    background: #2707eb;
+    background: #aa7417;
 }
 
 .preloader.preloader-hidden
@@ -519,7 +519,7 @@ a:hover
     height: 100%;
 
     opacity: .7;
-    background: #020026;
+    background: #1f1101;
 }
 
 .hero .background-content .background-img
@@ -762,7 +762,7 @@ a:hover
     border: none;
     border-radius: 6px;
     outline: none !important;
-    background: #2707eb;
+    background: #9b6812;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
 }
