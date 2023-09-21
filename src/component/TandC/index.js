@@ -59,7 +59,7 @@ export default function TandC() {
         }
     </style>
     
-    <div data-custom-class="body" style="color: #00587E !important">
+    <div data-custom-class="body" style="color: #FF731599 !important">
         <div align="center" style="text-align: left; line-height: 1;">
             <div align="center" class="MsoNormal" style="text-align: left; line-height: 150%;">
                 <div align="center" class="MsoNormal" style="text-align:center;line-height:150%;"><a
@@ -1721,6 +1721,6 @@ export default function TandC() {
 
 
         return (
-                <div className=' appear-in' style={{ height: "100%", color: "#00587E !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#bfefff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(tandcHTML) }}></div>
+                <div className=' appear-in' style={{ height: "100%", color: "#FF731599 !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#ffffff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(tandcHTML) }}></div>
         );
 }

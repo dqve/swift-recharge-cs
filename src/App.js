@@ -264,8 +264,12 @@ export default function App() {
             <div>
               <h3 className='two-header fade-in-in'>Sort your Airtime and payments with us!
                 Get the App today.</h3>
-              <button className='app-button appear-in two-button' onClick={() => setStoreModal(true)}><span>App Store</span><span className='img'></span></button>
-              <button className='play-button appear-in two-button' onClick={() => setStoreModal(true)}><span>Play Store</span><span className='img'></span></button>
+              <button className='app-button appear-in two-button'>
+                <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}>App store</a>
+              </button>
+              <button className='app-button appear-in two-button'>
+                <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}>Play store</a>
+              </button>
             </div>
           </div>
           <div className='col-md-4 sec-notif ' />

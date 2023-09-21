@@ -12,7 +12,7 @@ export default function PandP() {
     const theHTML = `<style>
         [data-custom-class='body'],
         [data-custom-class='body'] * {
-            background: #b9efff !important;
+            background: #ffffff !important;
         }
     
         [data-custom-class='title'],
@@ -59,7 +59,7 @@ export default function PandP() {
         }
     </style>
     
-    <div data-custom-class="body" style="color: #00587E !important">
+    <div data-custom-class="body" style="color: #FF731599 !important">
     <div><strong><span style="font-size: 26px;"><span data-custom-class="title">PRIVACY NOTICE</span></span></strong>
     </div>
     <div><br></div>
@@ -3146,6 +3146,6 @@ export default function PandP() {
 
 
     return (
-        <div className=' appear-in' style={{ height: "100%", color: "#00587E !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#bfefff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(theHTML) }}></div>
+        <div className=' appear-in' style={{ height: "100%", color: "#FF731599 !important", padding: "50px 25px", textAlign: "center !important", backgroundColor: "#ffffff90" }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(theHTML) }}></div>
     );
 }
