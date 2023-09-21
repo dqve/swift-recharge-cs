@@ -12,7 +12,7 @@ export default function Modal({ modal, setModal }) {
 
     return (
 
-        <section className="modal" style={{ display: modal ? "block" : "none", background: "#00587edf" }}>
+        <section className="modal" style={{ display: modal ? "block" : "none", background: "#F0701030" }}>
 
             <div className="modal--inner" onClick={() => setModal(false)}  >
                 <div className="modal--content modal--store">
@@ -27,14 +27,20 @@ export default function Modal({ modal, setModal }) {
 
                         <div className="form">
                             <div className='store-inner'>
-                                <h3 className="qr-info">Something amazing is coming soon.</h3>
-                                <div className='row store-img'>
-                                    <a rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.techtemple.pairwater.pairwater" target="_blank" className='col-md-4' >
-                                        <img src={appstore} alt="WOTA - Home"/>
-                                    </a>
-                                    <a rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.techtemple.pairwater.pairwater" target="_blank" className='col-md-4' >
-                                        <img src={googlestore} alt="WOTA - Home"/>
-                                    </a>
+                                <h3 className="qr-info">Contact Us</h3>
+                                <div className='row '>
+                                    <p>
+                                        <a href="mailto:support@swiftrecharge.ng" target="_blank" rel="noreferrer">
+                                            Contact email: support@swiftrecharge.ng</a>
+
+                                    </p>
+                                    <p>
+                                        <a href="tel:+2349055560494" target="_blank" rel="noreferrer">
+                                            Phone: 0905 556 0494</a>
+                                    </p>
+                                    <p>
+                                        Address: lekki, Lagos Nigeria
+                                    </p>
                                 </div>
                             </div>
                         </div>

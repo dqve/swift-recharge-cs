@@ -22,7 +22,7 @@ export default function Header({ nav, setNav }) {
                         {/* Logo */}
                         <div className="logo-container">
                             <a href="#" aria-current="page">
-                                <img src={logoOne} alt="WOTA - Home" />
+                                <img src={logoOne} alt="Swift Recharge - Home" />
                             </a>
                         </div>
 
@@ -45,7 +45,11 @@ export default function Header({ nav, setNav }) {
                             </li>
                         </ul>
                         <div className="hero-content-button button-container">
-                            <button className="play-button" onClick={() => setModal(true)} >Register</button>
+
+                            <Scroll to="sec-6" spy={true} smooth={true} className="">
+                            <button className="play-button">Get App</button>
+                            </Scroll>
+
                         </div>
 
                         {/* Mobile navigation */}
@@ -53,7 +57,7 @@ export default function Header({ nav, setNav }) {
                             <div className={`nav-contents`}>
                                 {/* mobile logo */}
                                 <div>
-                                    <img src={logoOne} className="mobile-ham-logo" alt="WOTA - Home" />
+                                    <img src={logoOne} className="mobile-ham-logo" alt="Swift Recharge - Home" />
                                 </div>
                                 {/* end of mobile logo */}
                                 {/* mobile lists */}
@@ -92,7 +96,7 @@ export default function Header({ nav, setNav }) {
                                 <div className={`nav-contents ${menu ? "activate" : ""}`}>
                                     {/* mobile logo */}
                                     <a href="#" aria-current="page">
-                                        <img src={logoOne} className="mobile-ham-logo" alt="WOTA - Home" />
+                                        <img src={logoOne} className="mobile-ham-logo" alt="Swift Recharge - Home" />
                                     </a>
                                     {/* end of mobile logo */}
                                     {/* mobile lists */}
@@ -101,13 +105,13 @@ export default function Header({ nav, setNav }) {
                                             <Scroll onClick={() => {setMenu(false);setNav("home")}} to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-1" spy={true} smooth={true} className="mobile__link">About</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-2" spy={true} smooth={true} className="mobile__link">About</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-4" spy={true} smooth={true} className="mobile__link">Brands</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-1" spy={true} smooth={true} className="mobile__link">Brands</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-7" spy={true} smooth={true} className="mobile__link">Support</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-8" spy={true} smooth={true} className="mobile__link">Support</Scroll>
                                         </li>
                                         <li className="mobile__list">
                                         <div className="mobile__link" onClick={() => {setMenu(false);setNav("tandc")}}>Terms &amp; Conditions</div>

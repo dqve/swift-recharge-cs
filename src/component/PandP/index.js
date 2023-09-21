@@ -103,7 +103,7 @@ export default function PandP() {
             <li style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span
                         style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">Download
                             and use<bdt class="block-component"></bdt> our mobile application<bdt
-                                class="block-component"></bdt> (<bdt class="question">pair wota)<span
+                                class="block-component"></bdt> (<bdt class="question">swift recharge )<span
                                     style="font-size: 15px; color: rgb(89, 89, 89);"><span
                                         style="font-size: 15px; color: rgb(89, 89, 89);"><span
                                             data-custom-class="body_text"><span style="font-size: 15px;"><span
@@ -2985,7 +2985,7 @@ export default function PandP() {
                                                                                             style="color: rgb(89, 89, 89);"><span
                                                                                                 data-custom-class="body_text">
                                                                                                 <bdt class="question">
-                                                                                                    pairwota inc</bdt>
+                                                                                                   Swift Recharge  inc</bdt>
                                                                                             </span></span></span></span></span><span
                                                                                 data-custom-class="body_text"><span
                                                                                     style="color: rgb(89, 89, 89);"><span

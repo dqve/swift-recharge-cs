@@ -1182,7 +1182,7 @@ export default function TandC() {
                                             style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);"><span
                                                 style="font-size: 11pt; line-height: 16.8667px; color: rgb(89, 89, 89);">
                                                 <bdt class="question">Nigeria</bdt>
-                                                pairwota inc. and yourself irrevocably consent that the courts of 
+                                               Swift Recharge  inc. and yourself irrevocably consent that the courts of 
                                             </span></span>
                                         <bdt class="statement-end-if-in-editor"></bdt>
                                     </span></span></span></span></span></span></span></span><span

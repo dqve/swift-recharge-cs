@@ -22,27 +22,31 @@ import logoOne from './assets/img/wota-logo-1.svg';
 import heroImage from './assets/img/hero-img.svg';
 import oneImg from './assets/img/one-img.svg';
 import wotaDivBg from './assets/img/wota-div-bg.svg'
+import cardIcon1 from './assets/img/logos/card-icon1.svg';
+import cardIcon2 from './assets/img/logos/card-icon2.svg';
 
-import brandOne from './assets/img/logos/ap.png';
-import brandTwo from './assets/img/logos/cp.png';
-import brandThree from './assets/img/logos/pi.png';
-import brandFour from './assets/img/logos/sa.png';
+import appStore from './assets/img/app-store.svg';
+import googlePlay from './assets/img/google-play.svg';
+import mockPhone from './assets/img/mock-rocket.png';
+
+import brandOne from './assets/img/logos/MTN-Logo.png';
+import brandTwo from './assets/img/logos/Glo.png';
+import brandThree from './assets/img/logos/etisalat.png';
+import brandFour from './assets/img/logos/airtel.png';
 import brandFive from './assets/img/logos/snk.png';
 import brandSix from './assets/img/brand-one.svg';
 
-import InIcon from './assets/img/socials/ln.svg';
-import IwIcon from './assets/img/socials/tw.svg';
-import IgIcon from './assets/img/socials/ig.svg';
-import ImIcon from './assets/img/socials/em.svg';
-
 import mockup from './assets/img/mock-up.svg';
 import chat from './assets/img/chat.svg';
-import { ReactComponent as Bubbles } from "./assets/img/bubbles.svg";
+import { ReactComponent as Bubbles } from "./assets/img/rocket.svg";
 
 import expActive from './assets/img/exp-active.svg';
 import expGeneral from './assets/img/exp-general.svg';
 import expProbe from './assets/img/exp-probe.svg';
 import { setTimeout } from "timers";
+import { SliderData } from './component/slider/data';
+import ImageSlider from './component/slider/Silder'
+
 
 
 export default function App() {
@@ -76,465 +80,361 @@ export default function App() {
   const Home = () => (
     <>
       <div id="hero" className='hero'>
-        <div className='hero-inner row'>
+        <div className='hero-inner col'>
 
-          <div className='col-md-5 hero-text'>
+          <div className='hero-text'>
             <div>
-              <h2 className='hero-header fade-in-in'>Water purchase<br />
-                made easy, <span>convenient</span><br />
-                and fast.</h2>
-              <p className='hero-content fade-in-in'>Reduces the time and effort required to fullfill your water
-                demands. Create water order probes on the fly.</p>
-              <div className='hero-content-button appear-in'>
-                <button className='app-button' onClick={() => setStoreModal(true)} >App store</button>
-                <button className='play-button' onClick={() => setStoreModal(true)} >Play store</button>
+              <h1 className='hero-header fade-in-in'>
+                <span className="head-1">Welcome to Swift Recharge</span><br />
+                <span className="head-2">Your all-in-one platform for seamless bill payment.</span>
+              </h1>
+            </div>
+          </div>
+          <div className='hero-text'>
+            <Scroll to="sec-1" spy={true} smooth={true} className="hero-button">Start Now</Scroll>
+
+          </div>
+          <div className='hero-img appear-in row gap-5'>
+            <div className="col-md-4 hero-img-1 hero-img-card">
+              <div className="img-1" />
+              <div>
+                <p><b> Airtime Recharge</b></p>
+                <p>Instantly top up airtime for any mobile network in Nigeria. Stay connected anytime, anywhere.</p>
+              </div>
+            </div>
+
+            <div className="col-md-4 hero-img-2 hero-img-card">
+              <div className="img-2" />
+              <div>
+                <p><b>Bill Payment Made Easy</b></p>
+                <p>Pay your bills hassle-free with Swift Recharge. Enjoy access to over 8000+ billers for convenient and secure transactions.</p>
+              </div>
+            </div>
+
+            <div className="col-md-4 hero-img-3 hero-img-card">
+              <div className="img-3" />
+              <div>
+                <p><b>Airtime Vault</b></p>
+                <p>Never run out of airtime again. Swift Recharge's Airtime Vault ensures you always have offline and online access to airtime, providing peace of mind.</p>
               </div>
             </div>
           </div>
-
-          <div className='col-md-6 hero-img appear-in'>
-            <MouseParallaxContainer
-              className="parallax"
-              containerStyle={{
-                width: "100%"
-              }}
-              resetOnLeave
-            >
-              <MouseParallaxChild
-                factorX={0.05}
-                factorY={0.05}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "1.25rem"
-                }}>
-                <img src={heroImage} alt="WOTA - Home" className="appear-in" />
-              </MouseParallaxChild>
-            </MouseParallaxContainer>
-          </div>
-        </div>
-
-        {/* --Waves Container-- */}
-        <div className="waves-container">
-          <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g className="parallax">
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(234,250,255,0.7" />
-              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(234,250,255,0.5)" />
-              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(234,250,255,0.3)" />
-              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#EAFAFF" />
-            </g>
-          </svg>
-        </div>
-        {/* --Waves end-- */}
-
-      </div>
-
-      <div id="sec-1" className='section-one'>
-        <div className='one-inner row'>
-          <div className='col-md-5 one-text'>
-            <div className="position-relative text-container">
-              <h2 className='one-header fade-in-in'>Easily find and purchase water
-                products from water sellers around you.</h2>
-              <p className='one-content fade-in-in'>Search and match with water merchants within minutes.</p>
-            </div>
-          </div>
-          <div className='col-md-6 one-img'>
-            <img src={oneImg} alt="WOTA - Home" className="appear-in" onClick={() => setOpen(true)} />
-          </div>
         </div>
       </div>
 
-      <div id="sec-2" className='section-four'>
-        <div className='four-inner row'>
-          <div className='col-md-5 four-img'>
-            <img src={chat} alt="WOTA - Home" />
-          </div>
-          <div className='col-md-6 four-text'>
-            <div className="position-relative text-container">
-              <h2 className='four-header fade-in-in'>Simple, Effective, Fast and Rewarding.</h2>
-              <p className='four-content fade-in-in'>Our simplified onboarding process coupled with the two clicks ordering system has been carefully designed to give you an effective,  fast and rewarding water purchase experience.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="sec-3" className='section-two'>
-        <div className='two-inner row'>
-          <div className='col-md-7 two-text appear-in'>
-            <div>
-              <h3 className='two-header'>Ready to jumpstart your water distribution?
-                Become a partner today and serve your customers better!</h3>
-            </div>
-          </div>
-          <div className='col-md-4 two-button appear-in'>
-            <button className='register-button' onClick={() => setModal(true)}><span>Register</span><span className='img'></span></button>
-          </div>
-        </div>
-      </div>
-
-      <div id="sec-4" className='section-three'>
+      <div id="sec-1" className='section-three'>
         <div className='three-inner'>
           <div className='three-text fade-in-in'>
-            <h2 className='three-header'>Connected brands</h2>
-            <p className='three-content'>We connect you to a network of water producers from different countries in different cities around the world, we are trusted by companies both large and small.</p>
+            <h6 className='three-header'>Powered by</h6>
           </div>
           <div className='three-img appear-in'>
             <div>
               <div className='row logos-col'>
                 <div className='col-4 col-md-2'>
-                  <img src={brandOne} alt="WOTA - Home" className="logos" />
+                  <img src={brandOne} alt="SWIFT RECHARGE - Home" className="logos" />
                 </div>
                 <div className='col-4 col-md-2'>
-                  <img src={brandTwo} alt="WOTA - Home" className="logos" />
+                  <img src={brandTwo} alt="SWIFT RECHARGE - Home" className="logos" />
                 </div>
                 <div className='col-4 col-md-2'>
-                  <img src={brandThree} alt="WOTA - Home" className="logos" />
+                  <img src={brandThree} alt="SWIFT RECHARGE - Home" className="logos logos-3" />
                 </div>
                 <div className='col-4 col-md-2'>
-                  <img src={brandFour} alt="WOTA - Home" className="logos" />
-                </div>
-                <div className='col-4 col-md-2'>
-                  <img src={brandFive} alt="WOTA - Home" className="logos" />
+                  <img src={brandFour} alt="SWIFT RECHARGE - Home" className="logos logos-4" />
                 </div>
               </div>
-              {/* <div className='row'>
-                  <div className='col-sm-3 p-4 ps-5'>
-                    <img src={brandFour} alt="WOTA - Home" className="logos" />
-                  </div>
-                  <div className='col-sm-3 p-4 ps-5'>
-                    <img src={brandFive} alt="WOTA - Home" className="logos" />
-                  </div>
-                  <div className='col-sm-3 p-4 ps-5'>
-                    <img src={brandSix} alt="WOTA - Home" className="logos" />
-                  </div>
-                  <div className='col-sm-2'>
-                    <img src={brandOne} alt="WOTA - Home" />
-                  </div>
-                </div> */}
             </div>
           </div>
         </div>
       </div>
 
-      <div id="sec-5" className='section-four'>
-        <div className='four-inner row'>
-          <div className='col-md-5 four-text'>
+      <div id="sec-2" className='section-one'>
+        <div className='one-inner row'>
+          <div className='col-md-5 one-text'>
             <div className="position-relative text-container">
-              <h2 className='four-header fade-in-in'>Buy water with ease and comfort anywhere and anytime.</h2>
-              <p className='four-content fade-in-in'>Buying or selling water shouldn't be a hassle thats why the world of thirst app has made it easier for water producers to market and sell their products to a world of ever thirsty consumers.</p>
+              <h6 className='one-header-top fade-in-in'>Airtime</h6>
+              <h2 className='one-header fade-in-in'>Airtime Recharge</h2>
+              <p className="one-header-inner">
+                <img src={cardIcon1} alt="Card Icon" />
+                Instant Airtime Recharge
+              </p>
+              <p className='one-content fade-in-in'>Top up your airtime instantly for all major mobile
+                networks in Nigeria. Stay connected effortlessly with just a few clicks.</p>
+            </div>
+          </div>
 
-            </div>
-          </div>
-          <div className='col-md-6 four-img'>
-            <img src={mockup} alt="WOTA - Home" className="appear-in" />
-          </div>
-        </div>
-      </div>
-
-      <div id="sec-6" className='section-five'>
-        <div className='five-inner appear-in'>
-          <div className='five-text'>
-            <h2 className='five-header'>Tailored experince</h2>
-          </div>
-          <div className='five-img row'>
-            <div className='col-md-4 exp-item'>
-              <img src={expActive} alt="WOTA - Home" />
+          <div className='col-md-6 one-img appear-in'>
+            <div className="card-img img-card-1">
+              <div className="img-1" />
               <div>
-                <h5>Active mode</h5>
-                <p>
-                  Best for urgent water needs. select a driver in the app, pick your desired product pay, then confirm delivery and the rate driver after dellivery.
-                </p>
-              </div>
-            </div>
-            <div className='col-md-4 exp-item'>
-              <img src={expGeneral} alt="WOTA - Home" />
-              <div>
-                <h5>General mode</h5>
-                <p>select your location and choose a driver/seller seller in the app, pick your desired product, pay, then confirm delivery and the rate driver after dellivery.</p>
-              </div>
-            </div>
-            <div className='col-md-4 exp-item'>
-              <img src={expProbe} alt="WOTA - Home" />
-              <div>
-                <h5>Probe mode</h5>
-                <p>Best for bulk purchases. select a location in the app, create a probe and wait for offers from sellers! choose an offer, pay, then confirm delivery and rate driver after dellivery.</p>
+                <p><b>Customizable Recharge Amounts</b></p>
+                <p>Choose recharge amounts based on your needs. Swift Recharge caters
+                  to both casual users and those with specific usage requirements.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="sec-7" className='section-seven'>
+      <div id="sec-3" className='section-one'>
+        <div className='one-inner row'>
+          <div className='col-md-5 one-img appear-in'>
+            <div className="card-img img-card-2">
+              <div className="img-2" />
+              <div>
+                <p><b>Recharge Card 2.0</b></p>
+                <p>Swift Recharge introduces a new system for non-instant airtime top-up,
+                  available both offline and online. Enjoy flexibility and convenience.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-md-6 one-text'>
+            <div className="position-relative text-container">
+              <h6 className='one-header-top fade-in-in'>Airtime</h6>
+              <h2 className='one-header fade-in-in'>Airtime Vault</h2>
+              <p className="one-header-inner">
+                <img src={cardIcon2} alt="Card Icon" />
+                New Airtime Product
+              </p>
+              <p className='one-content fade-in-in'>Swift Recharge's Airtime Vault feature ensures you're always airtime sufficient.
+                Access your reserve/vault of airtime both offline and online, providing uninterrupted communication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec-4" className='section-one'>
+        <div className='one-inner row'>
+          <div className='col-md-5 one-text'>
+            <div className="position-relative text-container">
+              <h6 className='one-header-top fade-in-in'>Payment</h6>
+              <h2 className='one-header fade-in-in'>Pay Bills with Ease</h2>
+              <p className="one-header-inner">
+                <img src={cardIcon1} alt="Card Icon" />
+                Embrace the Latest Airtime Technology
+              </p>
+              <p className='one-content fade-in-in'>Swift Recharge offers a simple and secure bill payment solution.
+                Enjoy the convenience of paying over 8000+ billers from various sectors.</p>
+            </div>
+          </div>
+
+          <div className='col-md-6 one-img appear-in'>
+            <div className="card-img img-card-1">
+              <div className="img-3" />
+              <div>
+                <p><b>Awoof Link</b></p>
+                <p>Unlock special rewards with Swift Recharge's Awoof Link.
+                  Click the link to redeem already paid products from our extensive network of 8000+ billers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec-5" className='section-one'>
+        <div className='one-inner row'>
+          <div className='col-md-5 one-img appear-in'>
+            <div className="card-img img-card-2">
+              <div className="img-4" />
+              <div>
+                <p><b>Secure and Reliable</b></p>
+                <p>Trust in Swift Recharge's secure and reliable platform.
+                  We prioritize the security of your transactions and ensure your data is protected.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-md-6 one-text'>
+            <div className="position-relative text-container">
+              <h6 className='one-header-top fade-in-in'>Payment</h6>
+              <h2 className='one-header fade-in-in'>Timely Bill Reminders</h2>
+              <p className="one-header-inner">
+                <img src={cardIcon2} alt="Card Icon" />
+                Embrace the Latest Financial Technology
+              </p>
+              <p className='one-content fade-in-in'>Never miss a bill payment deadline again.
+                Swift Recharge provides timely reminders to help you stay on top of your bills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec-6" className='section-six'>
+        <div className='six-inner row'>
+          <div className='col-md-7 two-text'>
+            <div>
+              <h3 className='two-header fade-in-in'>Sort your Airtime and payments with us!
+                Get the App today.</h3>
+              <button className='app-button appear-in two-button' onClick={() => setStoreModal(true)}><span>App Store</span><span className='img'></span></button>
+              <button className='play-button appear-in two-button' onClick={() => setStoreModal(true)}><span>Play Store</span><span className='img'></span></button>
+            </div>
+          </div>
+          <div className='col-md-4 sec-notif ' />
+        </div>
+      </div>
+
+      <div id="sec-7" className='section-slider'>
+        <ImageSlider slides={SliderData} />
+      </div>
+
+      <div id="sec-8" className='section-seven'>
         <div className='seven-inner appear-in'>
           <div className='seven-text'>
             <h2 className='seven-header'>Support and FAQs</h2>
           </div>
           <div className='seven-img row justify-around'>
-            <div className='col-md-6 exp-item'>
-              <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Where can i find WOTA offices?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      You can find WOTA offices in Lagos Nigeria for now, more offices on the way as we expand.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Where does WOTA operate?
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      WOTA offers a convinient way to purchase water products in more than 36 cities you can visit our website www.pairwota.com for more info.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      WOTA API
-                    </button>
-                  </h2>
-                  <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      Thanks for your interest, unforturnately we do not offer any API's at the moment.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Delete my WOTA data
-                    </button>
-                  </h2>
-                  <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      WOTA processes some of your personal data when you install and sign in the World of Thirst app, you agree with our General Terms and Conditions and give your consent for collecting and processing your data.
-                      As long as you have an active account your personal data would be stored. to get a copy of your personal data, Please contact our support.
-                      To delete your data, please send a request for your account to be deleted via a message. After that, your personal data will be removed from the database. except such data is required for accounting, fraud prevention or dispute management.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      I can't sign into my account
-                    </button>
-                  </h2>
-                  <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      We are sorry for the inconvenience! Please contact support via email so we can troubleshoot and fix this issue.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingSix">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      My account has been compromised
-                    </button>
-                  </h2>
-                  <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      If you suspect that someone has gained access to and/or used your account without your consent, please contact your bank to block your card immediately to prevent further unauthorised use.
-                      Do not hesitate to contact support for further assistance.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingSeven">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      Signup to deliver water products
-                    </button>
-                  </h2>
-                  <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      Earn extra money as a WOTA driver.
-                      Make sure you are associated with an existing producer.
-                      Download the WOTA Driver app on playstore or Appstore, signup and start delivering.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingEight">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                      Signup to buy water
-                    </button>
-                  </h2>
-                  <div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      Download the Pair WOTA app on playstore or Appstore, signup and start buying.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingNine">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                      Why is my account blocked?
-                    </button>
-                  </h2>
-                  <div id="collapseNine" className="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      Your account may be blocked if you have violated the World of thirst app rules. contact support via mail if your account has been blocked.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTen">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                      Edit my account information
-                    </button>
-                  </h2>
-                  <div id="collapseTen" className="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-                    <div className="accordion-body">
-                      You can edit your profile information in the edit profile menu.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div className='col-md-6 exp-item'>
               <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingEleven">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                      Request a copy of my WOTA data
+                      Delete my SWIFT RECHARGE data
                     </button>
                   </h2>
                   <div id="collapseEleven" className="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      To request a transfer of your personal data please contact the support team through the app.
+                      SWIFT RECHARGE processes some of your personal data when you install and sign in the Swift Rechage app, you agree with our General Terms and Conditions and give your consent for collecting and processing your data. As long as you have an active account your personal data would be stored. to get a copy of your personal data, Please contact our support. To delete your data, please send a request for your account to be deleted via a message. After that, your personal data will be removed from the database. except such data is required for accounting, fraud prevention or dispute management.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingTwelve">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                      How to view price breakdown
+                      I can't sign into my account
                     </button>
                   </h2>
                   <div id="collapseTwelve" className="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      In your order history details, tap on the total price text.
+                      We are sorry for the inconvenience! Please contact support via email so we can troubleshoot and fix this issue.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingThirteen">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                      Driver request for cash after you paid in app
+                      My account has been compromised
                     </button>
                   </h2>
                   <div id="collapse13" className="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      World of thirst app only supports non-cash payment for now, if after you paid in app and a driver request for cash. please contact our support via the app to report the situation.
+                      If you suspect that someone has gained access to and/or used your account without your consent, please contact your bank to block your card immediately to prevent further unauthorised use. Do not hesitate to contact support for further assistance.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading14">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                      Price higher than expected
+                      Signup to deliver water products
                     </button>
                   </h2>
                   <div id="collapse14" className="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      We are sorry about this issue: The final price may increase if the distance between your location and the seller/driver location is greater than 200 meters. exclusive of service charge fee.
+                      Earn extra money as a Swift Recharge driver. Make sure you are associated with an existing producer. Download the Swift Recharge Driver app on playstore or Appstore, signup and start delivering.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading15">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                      I want to report unknown charges
+                      Signup to Swift recharge
                     </button>
                   </h2>
                   <div id="collapse15" className="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      If you do not recognise the charge, please immediately contact your bank to block your card to prevent further un authorised use or contact support for help.
+                      Download the Swift recharge app on playstore or Appstore, signup and start buying.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading16">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                      I was charged twice for the same order
+                      Why is my account blocked?
                     </button>
                   </h2>
                   <div id="collapse16" className="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      If you were charged twice for an order you placed please contact support for further investigation.
+                      Your account may be blocked if you have violated the Swift Recharge app rules. contact support via mail if your account has been blocked.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading17">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                      Adding, changing or removing payment method
+                      Edit my account information
                     </button>
                   </h2>
                   <div id="collapse17" className="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      To add or remove payment card, Go to your wallet and add payment method or remove payment method.
+                      You can edit your profile information in the edit profile menu.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading19">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-                      Map Shows incorrect data
+                      Request a copy of my SWIFT RECHARGE data
                     </button>
                   </h2>
                   <div id="collapse18" className="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      If map is not loading correctly, make sure you have a stable internet connection if issues still persist. please contact support.
+                      To request a transfer of your personal data please contact the support team through the app.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading20">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
-                      How to get price estimate
+                      Delete my account
                     </button>
                   </h2>
                   <div id="collapse19" className="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      You will see the price estimate for your order after you have selected the delivery address and desired product.
+                      To delete your account kindly make your request via email to support@swiftrecharge.ng or any social media channel to commence account deletion process , once your account is deleted you won't be able to restore any information connected to it.
                     </div>
                   </div>
                 </div>
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading20">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-                      How to order water
+                      Where can I find SWIFT RECHARGE offices?
                     </button>
                   </h2>
                   <div id="collapse20" className="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      (Active mode) Tap on any car icon on the map and select desired products from sellers catalogue. then proceed to set delivery address.
-                      (Normal mode) Select delivery location and desired product cateegory, we would look for all available sellers around your set delivery location. you can then proceed to select any seller of your choice.
-                      (Probe mode) Create order probes in probe mode and wait for different drivers /sellers to make you an offer for your request.
-
+                      You can find SWIFT RECHARGE offices in Lagos Nigeria for now, more offices on the way as we expand.
                     </div>
                   </div>
                 </div>
-
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="heading20">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                      Where does SWIFT RECHAGRE operate?
+                    </button>
+                  </h2>
+                  <div id="collapse20" className="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Swift recharge offers a convinient way to pay bills for over 8000+ billers you can visit our website www.swiftrecharge.ng for more info.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="heading20">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                      SWIFT RECHARGE API
+                    </button>
+                  </h2>
+                  <div id="collapse20" className="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                      Thanks for your interest, unforturnately we do not offer any API's at the moment.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </>
   )
 
@@ -563,7 +463,7 @@ export default function App() {
 
       <div className="App">
 
-        {/* modal section  */}
+        {/* modal section */}
         <Modal modal={modal} setModal={setModal} />
         <StoreModal modal={storeModal} setModal={setStoreModal} />
         <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="iwzcbxs-t7E" onClose={() => setOpen(false)} />

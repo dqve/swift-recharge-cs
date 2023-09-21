@@ -1,25 +1,9 @@
-@-webkit-keyframes modal-video {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes modal-video {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes modal-video-inner {
-  from {
-    transform: translate(0, 100px);
-  }
-  to {
-    transform: translate(0, 0);
   }
 }
 @keyframes modal-video-inner {
@@ -40,12 +24,9 @@
   z-index: 1000000;
   cursor: pointer;
   opacity: 1;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video;
-          animation-name: modal-video;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
   transition: opacity 0.3s ease-out;
 }
 
@@ -87,12 +68,9 @@
   position: relative;
   padding-bottom: 56.25%;
   background-color: #333;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video-inner;
-          animation-name: modal-video-inner;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video-inner;
   transform: translate(0, 0);
   transition: transform 0.3s ease-out;
 }
@@ -139,4 +117,66 @@
   background: #fff;
   border-radius: 5px;
   margin-top: -6px;
+}
+
+.svg {
+  display: block;
+  margin: 0 auto;
+  width: 640px;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-50%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(50%);
+  }
+  80% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@keyframes launching {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes thrustering {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+.clouds {
+  opacity: 0.5;
+  animation: moving 10s -2s infinite alternate linear forwards;
+}
+
+.rocket {
+  animation: launching 10s 0s infinite alternate ease-in-out forwards;
+}
+
+.thruster {
+  transform-origin: 50% 50%;
+  animation: thrustering 1s 0s infinite alternate linear forwards;
 }/*# sourceMappingURL=video.css.map */
