@@ -233,8 +233,8 @@ export default function TandC() {
                         “<strong>our</strong>”), concerning your access to and use of the <bdt
                             class="block-container question question-in-editor"
                             data-id="92c3b320-1d8b-c74c-db68-d12810736807" data-type="question"><a
-                                href="https://www.Swift Recharge.com" target="_blank"
-                                data-custom-class="link">https://www.Swift Recharge.com</a></bdt> website as well as any other
+                                href="https://www.swiftrecharge.ng" target="_blank"
+                                data-custom-class="link">https://www.swiftrecharge.ng</a></bdt> website as well as any other
                         media form, media channel, mobile website or mobile application related, linked, or otherwise
                         connected thereto (collectively, the “Site”).<span style="font-size:11.0pt;line-height:115%;
       color:#595959;mso-themecolor:text1;
@@ -1697,7 +1697,7 @@ export default function TandC() {
                         style="font-size: 15px; line-height: 115%; color: rgb(89, 89, 89);">
                         <bdt class="block-container question question-in-editor"
                             data-id="fdc2b5b8-c95f-244b-23a7-287f82541348" data-type="question">
-                            <strong>info@Swift Recharge.com</strong></bdt>
+                            <strong>info@swiftrecharge.ng</strong></bdt>
                     </span></div>
             </div>
             <style>

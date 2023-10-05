@@ -141,7 +141,7 @@ export default function PandP() {
                         data-custom-class="body_text"><strong>Questions or concerns? </strong>Reading this privacy
                         notice will help you understand your privacy rights and choices. If you do not agree with our
                         policies and practices, please do not use our Services. If you still have any questions or
-                        concerns, please contact us at <bdt class="question">info@Swift Recharge.com</bdt>
+                        concerns, please contact us at <bdt class="question">info@swiftrecharge.ng</bdt>
                         .</span></span></span></div>
         <div style="line-height: 1.5;"><br></div>
         <div style="line-height: 1.5;"><br></div>
@@ -224,8 +224,8 @@ export default function PandP() {
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>How do
                         you exercise your rights?</strong> The easiest way to exercise your rights is by filling out our
                     data subject request form available <bdt class="block-component"></bdt>here: <bdt class="question">
-                        <a href="http://www.Swift Recharge.com" target="_blank"
-                            data-custom-class="link">http://www.Swift Recharge.com</a></bdt>
+                        <a href="http://www.swiftrecharge.ng" target="_blank"
+                            data-custom-class="link">http://www.swiftrecharge.ng</a></bdt>
                     <bdt class="else-block"></bdt>, or by contacting us. We will consider and act upon any request in
                     accordance with applicable data protection laws.
                 </span></span></div>
@@ -2759,7 +2759,7 @@ export default function PandP() {
                                                                             style="font-size: 15px;">If you have
                                                                             questions or comments about your privacy
                                                                             rights, you may email us at <bdt
-                                                                                class="question">support@Swift Recharge.com
+                                                                                class="question">support@swiftrecharge.ng
                                                                             </bdt>.</span></span>
                                                                     <bdt class="statement-end-if-in-editor"><span
                                                                             style="font-size: 15px;"><span
@@ -2964,7 +2964,7 @@ export default function PandP() {
                                                                                         <bdt class="block-component">
                                                                                         </bdt>email us at <bdt
                                                                                             class="question">
-                                                                                            info@Swift Recharge.com</bdt>
+                                                                                            info@swiftrecharge.ng</bdt>
                                                                                         <bdt
                                                                                             class="statement-end-if-in-editor">
                                                                                         </bdt>
@@ -3117,9 +3117,9 @@ export default function PandP() {
                                                                             </span></bdt><span
                                                                                 data-custom-class="body_text">visit:
                                                                                 <bdt class="question"><a
-                                                                                        href="http://www.Swift Recharge.com"
+                                                                                        href="http://www.swiftrecharge.ng"
                                                                                         target="_blank"
-                                                                                        data-custom-class="link">http://www.Swift Recharge.com</a>
+                                                                                        data-custom-class="link">http://www.swiftrecharge.ng</a>
                                                                                 </bdt>
                                                                                 <bdt class="else-block"></bdt>
                                                                             </span></span><span
