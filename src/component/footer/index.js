@@ -29,7 +29,7 @@ export default function Footer({ setNav }) {
                             <h3 className='two-header fade-in-in'>One Solution for All Your Bills and Airtime Payments</h3>
                             <div className="nine-buttons">
                                 <div className="apps-button">
-                                    <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}><img src={appStore} alt="Card Icon" /></a>
+                                    <a rel="noopener noreferrer" className="text" href="https://apps.apple.com/app/swift-recharge/id6451211838" target="_blank" style={{color: "rgb(250, 250, 250)"}}><img src={appStore} alt="Card Icon" /></a>
                                     </div>
                                 <div className="apps-button">
                                     <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}><img src={googlePlay} alt="Card Icon" /></a>

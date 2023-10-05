@@ -225,16 +225,16 @@ export default function TandC() {
       color:#595959;mso-themecolor:text1;
       mso-themetint:166;">These Terms of Use constitute a legally binding agreement made between you, whether personally or
                         on behalf of an entity (“you”) and <bdt class="block-container question question-in-editor"
-                            data-id="4ab94aa9-19d1-61e0-711e-42c7d186232b" data-type="question">pairwota inc</bdt>
-                        <bdt class="block-component"></bdt>, doing business as <bdt class="question">WOTA</bdt>
+                            data-id="4ab94aa9-19d1-61e0-711e-42c7d186232b" data-type="question">Swift Recharge inc</bdt>
+                        <bdt class="block-component"></bdt>, doing business as <bdt class="question">Swift Recharge</bdt>
                         <bdt class="statement-end-if-in-editor"></bdt> ("<bdt class="block-component"></bdt>
-                        <bdt class="question"><strong>WOTA</strong></bdt>
+                        <bdt class="question"><strong>Swift Recharge</strong></bdt>
                         <bdt class="else-block"></bdt>," “<strong>we</strong>," “<strong>us</strong>," or
                         “<strong>our</strong>”), concerning your access to and use of the <bdt
                             class="block-container question question-in-editor"
                             data-id="92c3b320-1d8b-c74c-db68-d12810736807" data-type="question"><a
-                                href="https://www.pairwota.com" target="_blank"
-                                data-custom-class="link">https://www.pairwota.com</a></bdt> website as well as any other
+                                href="https://www.Swift Recharge.com" target="_blank"
+                                data-custom-class="link">https://www.Swift Recharge.com</a></bdt> website as well as any other
                         media form, media channel, mobile website or mobile application related, linked, or otherwise
                         connected thereto (collectively, the “Site”).<span style="font-size:11.0pt;line-height:115%;
       color:#595959;mso-themecolor:text1;
@@ -1629,7 +1629,7 @@ export default function TandC() {
                 <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;"><span
                         style="font-size: 15px; line-height: 115%; color: rgb(89, 89, 89);">
                         <bdt class="block-container question question-in-editor"
-                            data-id="8a6919c4-2010-e7d6-2305-d74dfb08909d" data-type="question"><strong>pairwota
+                            data-id="8a6919c4-2010-e7d6-2305-d74dfb08909d" data-type="question"><strong>Swift Recharge
                                 inc</strong></bdt>
                     </span></div>
                 <div class="MsoNormal" data-custom-class="body_text" style="line-height: 1.5;"><span
@@ -1697,7 +1697,7 @@ export default function TandC() {
                         style="font-size: 15px; line-height: 115%; color: rgb(89, 89, 89);">
                         <bdt class="block-container question question-in-editor"
                             data-id="fdc2b5b8-c95f-244b-23a7-287f82541348" data-type="question">
-                            <strong>info@pairwota.com</strong></bdt>
+                            <strong>info@Swift Recharge.com</strong></bdt>
                     </span></div>
             </div>
             <style>

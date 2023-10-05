@@ -265,7 +265,7 @@ export default function App() {
               <h3 className='two-header fade-in-in'>Sort your Airtime and payments with us!
                 Get the App today.</h3>
               <button className='app-button appear-in two-button'>
-                <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}>App store</a>
+                <a rel="noopener noreferrer" className="text" href="https://apps.apple.com/app/swift-recharge/id6451211838" target="_blank" style={{color: "rgb(250, 250, 250)"}}>App store</a>
               </button>
               <button className='app-button appear-in two-button'>
                 <a rel="noopener noreferrer" className="text" href="https://play.google.com/store/apps/details?id=com.techtemple.swiftrecharge" target="_blank" style={{color: "rgb(250, 250, 250)"}}>Play store</a>
