@@ -9,7 +9,7 @@ import IwIcon from '../../assets/img/socials/tw.svg';
 import IgIcon from '../../assets/img/socials/ig.svg';
 import ImIcon from '../../assets/img/socials/em.svg';
 
-import logoOne from '../../assets/img/wota-logo-1.svg';
+import logoOne from '../../assets/img/wota-logo-2.svg';
 
 import { Link as Scroll } from 'react-scroll'
 
@@ -24,7 +24,7 @@ export default function Footer({ setNav }) {
 
             <div id="sec-9" className='section-six'>
                 <div className='nine-inner row'>
-                    <div className='col-md-6 two-text'>
+                    <div className='col-12 col-md-6 two-text'>
                         <div className="">
                             <h3 className='two-header fade-in-in'>One Solution for All Your Bills and Airtime Payments</h3>
                             <div className="nine-buttons">
@@ -37,8 +37,8 @@ export default function Footer({ setNav }) {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-5 sec-notif '>
-                        <img src={mockPhone} alt="Card Icon" />
+                    <div className='col-12 col-md-5 sec-notif '>
+                        <img src={mockPhone} alt="Card Icon" style={{width: "100%", height: "auto"}} />
                     </div>
                 </div>
             </div>

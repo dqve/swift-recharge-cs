@@ -149,7 +149,7 @@ export default function App() {
       </div>
 
       <div id="sec-2" className='section-one'>
-        <div className='one-inner row'>
+        <div className='one-inner row  items-center '>
           <div className='col-md-5 one-text'>
             <div className="position-relative text-container">
               <h6 className='one-header-top fade-in-in'>Airtime</h6>
@@ -162,7 +162,7 @@ export default function App() {
                 networks in Nigeria. Stay connected effortlessly with just a few clicks.</p>
             </div>
           </div>
-
+          
           <div className='col-md-6 one-img appear-in'>
             <div className="card-img img-card-1">
               <div className="img-1" />
@@ -177,7 +177,7 @@ export default function App() {
       </div>
 
       <div id="sec-3" className='section-one'>
-        <div className='one-inner row'>
+        <div className='one-inner row items-center reverse-flex'>
           <div className='col-md-5 one-img appear-in'>
             <div className="card-img img-card-2">
               <div className="img-2" />
@@ -232,7 +232,7 @@ export default function App() {
       </div>
 
       <div id="sec-5" className='section-one'>
-        <div className='one-inner row'>
+        <div className='one-inner row reverse-flex'>
           <div className='col-md-5 one-img appear-in'>
             <div className="card-img img-card-2">
               <div className="img-4" />
