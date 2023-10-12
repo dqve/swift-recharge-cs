@@ -31,7 +31,7 @@ import mockPhone from './assets/img/mock-rocket.png';
 
 import brandOne from './assets/img/logos/MTN-Logo.png';
 import brandTwo from './assets/img/logos/Glo.png';
-import brandThree from './assets/img/logos/etisalat.png';
+import brandThree from './assets/img/logos/9mobile.png';
 import brandFour from './assets/img/logos/airtel.png';
 import brandFive from './assets/img/logos/snk.png';
 import brandSix from './assets/img/brand-one.svg';
@@ -129,7 +129,7 @@ export default function App() {
           </div>
           <div className='three-img appear-in'>
             <div>
-              <div className='row logos-col'>
+              <div className='row logos-col items-center'>
                 <div className='col-4 col-md-2'>
                   <img src={brandOne} alt="SWIFT RECHARGE - Home" className="logos" />
                 </div>

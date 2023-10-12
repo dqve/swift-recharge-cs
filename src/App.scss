@@ -164,9 +164,9 @@ a {
 }
 
 .loader {
-  background: #00587E url(./assets/img/top-bg.png) top left no-repeat;
+  background: #303059 url(./assets/img/top-bg.png) top left no-repeat;
   background-size: cover;
-  // background-color: #00587E;
+  // background-color: #303059;
   width: 100%;
   display: flex;
   align-items: center;
@@ -252,7 +252,7 @@ a {
           height: 5rem;
           padding: 1.7rem 2.5rem;
           border-radius: 1rem;
-          background: #00587E;
+          background: #303059;
           color: #ffffff;
           font-family: inherit;
           font-size: 1.6rem;
@@ -330,7 +330,7 @@ a {
       .nav-contents {
         width: 100%;
         height: 100vh;
-        background-color: #209ac0;
+        background-color: #303059;
         position: fixed;
         z-index: 999;
         -webkit-transition: all 0.3s ease-out;
@@ -363,7 +363,7 @@ a {
 
           .nav-active {
             a {
-              color: #045d83;
+              color: #D8B951;
             }
           }
 
@@ -379,11 +379,11 @@ a {
               cursor: pointer;
 
               &:hover {
-                color: #045d83;
+                color: #D8B951;
               }
 
               &:focus {
-                color: #045d83;
+                color: #D8B951;
               }
             }
           }
@@ -543,7 +543,7 @@ a {
 .hero {
   width: 100%;
   height: 100vh;
-  background: #00587E url(./assets/img/top-bg.png) top left no-repeat;
+  background: #303059 url(./assets/img/top-bg.png) top left no-repeat;
   background-size: cover;
 
   display: flex;
@@ -1078,7 +1078,7 @@ a {
     line-height: 2.5rem;
     background: #FAFAFA;
     border-radius: 10px;
-    color: #00587E;
+    color: #303059;
     border: 1px solid #FAFAFA;
 
     .img {
@@ -1119,7 +1119,7 @@ a {
   font-size: 3.5rem;
   line-height: 5rem;
   text-align: left;
-  color: #00587E;
+  color: #303059;
 }
 
 
@@ -1158,7 +1158,7 @@ a {
       line-height: 2.5rem;
       background: #FAFAFA;
       border-radius: 10px;
-      color: #00587E;
+      color: #303059;
       border: 1px solid #FAFAFA;
 
       .img {
@@ -1262,13 +1262,14 @@ a {
     font-size: 1.75rem;
     line-height: 2rem;
     max-width: 50%;
-    color: #00587E;
+    color: #303059;
     text-align: center;
   }
 
   .three-img {
     .logos-col {
       justify-content: space-between;
+      align-items: center;
     }
 
     .logos {
@@ -1306,7 +1307,7 @@ a {
       font-size: 1.75rem;
       line-height: 2rem;
       max-width: 50%;
-      color: #00587E;
+      color: #303059;
       text-align: center;
 
     }
@@ -1320,7 +1321,7 @@ a {
       font-size: 1.75rem;
       line-height: 2rem;
       max-width: 70%;
-      color: #00587E;
+      color: #303059;
       text-align: center;
 
     }
@@ -1328,7 +1329,7 @@ a {
     .three-img {
       .logos-col {
         justify-content: center;
-
+        align-items: center;
         div {
           display: flex;
           justify-content: center;
@@ -1392,14 +1393,14 @@ a {
 .four-header {
   font-size: 4.5rem;
   line-height: 5rem;
-  color: #00587E;
+  color: #303059;
 }
 
 .four-content {
   font-size: 1.75rem;
   line-height: 2rem;
 
-  color: #00587E;
+  color: #303059;
 }
 
 @media only screen and (min-width: 93.75em) {
@@ -1538,7 +1539,7 @@ a {
 
     padding-bottom: 2.5rem;
     color: #FAFAFA;
-    color: #00587E;
+    color: #303059;
     text-align: center;
 
 
@@ -1548,7 +1549,7 @@ a {
     font-size: 1.75rem;
     line-height: 2rem;
     max-width: 50%;
-    color: #00587E;
+    color: #303059;
     text-align: center;
 
   }
@@ -1583,14 +1584,14 @@ a {
         h5 {
           font-size: 3.5rem;
           line-height: 5rem;
-          color: #00587E;
+          color: #303059;
         }
 
         p {
           font-size: 1.5rem;
           line-height: 2rem;
 
-          color: #00587E;
+          color: #303059;
         }
       }
     }
@@ -1616,7 +1617,7 @@ a {
       font-size: 1.75rem;
       line-height: 2rem;
       max-width: 50%;
-      color: #00587E;
+      color: #303059;
       text-align: center;
 
     }
@@ -1630,7 +1631,7 @@ a {
       font-size: 1.75rem;
       line-height: 2rem;
       max-width: 70%;
-      color: #00587E;
+      color: #303059;
       text-align: center;
 
     }
@@ -1832,7 +1833,7 @@ a {
       line-height: 2.5rem;
       background: #FAFAFA;
       border-radius: 10px;
-      color: #00587E;
+      color: #303059;
       border: 1px solid #FAFAFA;
 
       .img {
@@ -1914,14 +1915,14 @@ a {
       h5 {
         font-size: 3.5rem;
         line-height: 5rem;
-        color: #00587E;
+        color: #303059;
       }
 
       p {
         font-size: 1.5rem;
         line-height: 2rem;
 
-        color: #00587E;
+        color: #303059;
       }
     }
   }
@@ -2065,7 +2066,7 @@ a {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: #00587E;
+  background: #303059;
 
 
   .modal--inner {
@@ -2489,7 +2490,7 @@ select {
   padding: 2rem;
   width: 40rem;
   margin-bottom: 20px;
-  background-color: #00587E;
+  background-color: #303059;
   border: solid 1px #b8eaff;
   color: #fff !important;
   border-radius: 3rem;
@@ -2508,7 +2509,7 @@ select {
   padding: 2rem;
   width: 40rem;
   margin-bottom: 20px;
-  background-color: #00587E;
+  background-color: #303059;
   border: solid 1px #b8eaff;
   color: #fff !important;
   border-radius: 3rem;
@@ -2550,7 +2551,7 @@ select {
   padding: 1.5rem 4rem;
   border-radius: 2rem;
   background: #ddd;
-  color: #00587E;
+  color: #303059;
   font-family: inherit;
   font-size: 1.6rem;
   -webkit-transition: 0.2s all ease;
@@ -2585,21 +2586,21 @@ select {
 
 ::-webkit-file-upload-button {
   color: #fff;
-  background: #00587E;
+  background: #303059;
   cursor: pointer;
   white-space: nowrap;
   width: 100px;
-  border: 25px solid #00587E;
+  border: 25px solid #303059;
   border-radius: 25px;
 }
 
 ::-ms-browse {
   color: #fff;
-  background: #00587E;
+  background: #303059;
   cursor: pointer;
   white-space: nowrap;
   width: 100px;
-  border: 25px solid #00587E;
+  border: 25px solid #303059;
   border-radius: 25px;
 }
 

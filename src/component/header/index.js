@@ -47,7 +47,7 @@ export default function Header({ nav, setNav }) {
                         <div className="hero-content-button button-container">
 
                             <Scroll to="sec-6" spy={true} smooth={true} className="">
-                            <button className="play-button">Get App</button>
+                                <button className="play-button">Get App</button>
                             </Scroll>
 
                         </div>
@@ -102,26 +102,28 @@ export default function Header({ nav, setNav }) {
                                     {/* mobile lists */}
                                     <ul>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => {setMenu(false);setNav("home")}} to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
+                                            <Scroll onClick={() => { setMenu(false); setNav("home") }} to="hero" spy={true} smooth={true} className="mobile__link">Home</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-2" spy={true} smooth={true} className="mobile__link">About</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-1" spy={true} smooth={true} className="mobile__link">About</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-1" spy={true} smooth={true} className="mobile__link">Brands</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-4" spy={true} smooth={true} className="mobile__link">Brands</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                            <Scroll onClick={() => setMenu(false)} to="sec-8" spy={true} smooth={true} className="mobile__link">Support</Scroll>
+                                            <Scroll onClick={() => setMenu(false)} to="sec-7" spy={true} smooth={true} className="mobile__link">Support</Scroll>
                                         </li>
                                         <li className="mobile__list">
-                                        <div className="mobile__link" onClick={() => {setMenu(false);setNav("tandc")}}>Terms &amp; Conditions</div>
+                                            <div className="mobile__link" onClick={() => { setMenu(false); setNav("tandc") }}>Terms &amp; Conditions</div>
                                         </li>
                                         <li className="mobile__list">
-                                        <div className="mobile__link" onClick={() => {setMenu(false);setNav("pandp")}}>Privacy Policy</div>
+                                            <div className="mobile__link" onClick={() => { setMenu(false); setNav("pandp") }}>Privacy Policy</div>
                                         </li>
                                         <li className="mobile__list">
                                             <div className="hero-content-button">
-                                                <button className="play-button" onClick={() => setModal(true)} >Register</button>
+                                                <Scroll to="sec-6" spy={true} smooth={true} className="">
+                                                    <button className="play-button" onClick={() => setModal(true)} >Get App</button>
+                                                </Scroll>
                                             </div>
                                         </li>
                                     </ul>
