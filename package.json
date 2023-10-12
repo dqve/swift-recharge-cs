@@ -28,7 +28,7 @@
   },
   "scripts": {
     "startOld": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts--openssl-legacy-provider build",
     "startBuild": "npm run build && node ./server",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
