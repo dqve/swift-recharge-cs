@@ -71,15 +71,15 @@ export default function PandP() {
     <div><br></div>
     <div style="line-height: 1.5;"><span style="color: rgb(127, 127, 127);"><span
                 style="color: rgb(89, 89, 89); font-size: 15px;"><span data-custom-class="body_text">This privacy notice
-                    for <bdt class="question">pairwota inc</bdt><span style="color: rgb(89, 89, 89);"><span
+                    for <bdt class="question">Swift Recharge inc</bdt><span style="color: rgb(89, 89, 89);"><span
                             data-custom-class="body_text">
                             <bdt class="block-component"></bdt>
                         </span></span> (doing business as <span style="color: rgb(89, 89, 89);"><span
                             data-custom-class="body_text">
-                            <bdt class="question">World of thirst app)</bdt>
+                            <bdt class="question">Swift Recharge)</bdt>
                             <bdt class="statement-end-if-in-editor"></bdt>
                         </span></span> (<bdt class="block-component"></bdt>"<bdt class="block-component"></bdt>
-                    <bdt class="question"><strong>World of thirst app</strong></bdt>
+                    <bdt class="question"><strong>Swift Recharge</strong></bdt>
                     <bdt class="else-block"></bdt>," "<strong>we</strong>," "<strong>us</strong>," or
                     "<strong>our</strong>"<bdt class="statement-end-if-in-editor"></bdt>
                 </span><span data-custom-class="body_text">), describes how and why we might collect, store, use, and/or
@@ -141,7 +141,7 @@ export default function PandP() {
                         data-custom-class="body_text"><strong>Questions or concerns? </strong>Reading this privacy
                         notice will help you understand your privacy rights and choices. If you do not agree with our
                         policies and practices, please do not use our Services. If you still have any questions or
-                        concerns, please contact us at <bdt class="question">info@pairwota.com</bdt>
+                        concerns, please contact us at <bdt class="question">info@swiftrecharge.ng</bdt>
                         .</span></span></span></div>
         <div style="line-height: 1.5;"><br></div>
         <div style="line-height: 1.5;"><br></div>
@@ -162,7 +162,7 @@ export default function PandP() {
                         personal information do we process?</strong> When you visit, use, or navigate our Services, we
                     may process personal information depending on how you interact with <bdt class="block-component">
                     </bdt>
-                    <bdt class="question">World of thirst app</bdt>
+                    <bdt class="question">Swift Recharge</bdt>
                     <bdt class="else-block"></bdt> and the Services, the choices you make, and the products and features
                     you use. Click
                 </span></span><a data-custom-class="link" href="#personalinfo"><span style="font-size: 15px;"><span
@@ -224,15 +224,15 @@ export default function PandP() {
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text"><strong>How do
                         you exercise your rights?</strong> The easiest way to exercise your rights is by filling out our
                     data subject request form available <bdt class="block-component"></bdt>here: <bdt class="question">
-                        <a href="http://www.pairwota.com" target="_blank"
-                            data-custom-class="link">http://www.pairwota.com</a></bdt>
+                        <a href="http://www.swiftrecharge.ng" target="_blank"
+                            data-custom-class="link">http://www.swiftrecharge.ng</a></bdt>
                     <bdt class="else-block"></bdt>, or by contacting us. We will consider and act upon any request in
                     accordance with applicable data protection laws.
                 </span></span></div>
         <div style="line-height: 1.5;"><br></div>
         <div style="line-height: 1.5;"><span style="font-size: 15px;"><span data-custom-class="body_text">Want to learn
                     more about what <bdt class="block-component"></bdt>
-                    <bdt class="question">World of thirst app</bdt>
+                    <bdt class="question">Swift Recharge</bdt>
                     <bdt class="else-block"></bdt> does with any information we collect? Click
                 </span></span><a data-custom-class="link" href="#toc"><span style="font-size: 15px;"><span
                         data-custom-class="body_text">here</span></span></a><span style="font-size: 15px;"><span
@@ -2759,7 +2759,7 @@ export default function PandP() {
                                                                             style="font-size: 15px;">If you have
                                                                             questions or comments about your privacy
                                                                             rights, you may email us at <bdt
-                                                                                class="question">support@pairwota.com
+                                                                                class="question">support@swiftrecharge.ng
                                                                             </bdt>.</span></span>
                                                                     <bdt class="statement-end-if-in-editor"><span
                                                                             style="font-size: 15px;"><span
@@ -2964,7 +2964,7 @@ export default function PandP() {
                                                                                         <bdt class="block-component">
                                                                                         </bdt>email us at <bdt
                                                                                             class="question">
-                                                                                            info@pairwota.com</bdt>
+                                                                                            info@swiftrecharge.ng</bdt>
                                                                                         <bdt
                                                                                             class="statement-end-if-in-editor">
                                                                                         </bdt>
@@ -3117,9 +3117,9 @@ export default function PandP() {
                                                                             </span></bdt><span
                                                                                 data-custom-class="body_text">visit:
                                                                                 <bdt class="question"><a
-                                                                                        href="http://www.pairwota.com"
+                                                                                        href="http://www.swiftrecharge.ng"
                                                                                         target="_blank"
-                                                                                        data-custom-class="link">http://www.pairwota.com</a>
+                                                                                        data-custom-class="link">http://www.swiftrecharge.ng</a>
                                                                                 </bdt>
                                                                                 <bdt class="else-block"></bdt>
                                                                             </span></span><span
