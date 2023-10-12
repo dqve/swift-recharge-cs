@@ -260,7 +260,7 @@ export default function App() {
 
       <div id="sec-6" className='section-six'>
         <div className='six-inner row'>
-          <div className='col-md-7 two-text'>
+          <div className='col-2xl-7 col-6 two-text'>
             <div>
               <h3 className='two-header fade-in-in'>Sort your Airtime and payments with us!
                 Get the App today.</h3>
@@ -272,7 +272,7 @@ export default function App() {
               </button>
             </div>
           </div>
-          <div className='col-md-4 sec-notif ' />
+          <div className='col-2xl-5 col-6 sec-notif ' />
         </div>
       </div>
 

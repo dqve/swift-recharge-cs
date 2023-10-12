@@ -542,7 +542,8 @@ a {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 2rem;
   background: #303059 url(./assets/img/top-bg.png) top left no-repeat;
   background-size: cover;
 
@@ -553,7 +554,7 @@ a {
 }
 
 .hero-inner {
-  height: 85vh;
+  height: 100%;
   width: 100%;
 
   div {
@@ -1154,7 +1155,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 43.5em) {
   .section-one {
     padding: 0;
 
@@ -1850,13 +1851,17 @@ a {
   border-radius: 30px;
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  padding: 2rem 1rem;
+  ;
 
   .sec-notif {
-    background: url(./assets/img/succnotifis.png) top left no-repeat;
+    background: url(./assets/img/succnotifis.png) top right no-repeat;
     width: 504px;
     height: 275px;
     background-size: auto;
+    text-align: right;
+    align-self: flex-end;
   }
 
   .two-button {
@@ -1897,16 +1902,49 @@ a {
   }
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 55em) {
+
   .six-inner {
-    padding: 2.5rem;
+    width: 100%;
+    padding: 2.5rem 1rem;
     margin: 5rem 0px;
     border-radius: 0px;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      .text {
+        min-width: max-content;
+      }
+    }
+
+    .two-text div {
+      .two-header {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: left;
+      }
+    }
 
     .sec-notif {
       background: url(./assets/img/succnotifis.png) top left no-repeat;
       width: 100%;
+      height: auto;
+      background-size: auto;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 75em) {
+  .six-inner {
+    padding: 2.5rem;
+    margin: 15rem 0px;
+
+    .sec-notif {
+      background: url(./assets/img/succnotifis.png) top left no-repeat;
+      width: 100px;
       height: auto;
       background-size: auto;
     }
@@ -2056,7 +2094,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 55em) {
 
   .nav {
     padding: 1rem 3rem;
@@ -2077,9 +2115,9 @@ a {
       text-align: center;
     }
 
-    .nine-buttons{
-flex-direction: column;
-justify-content: center;
+    .nine-buttons {
+      flex-direction: column;
+      justify-content: center;
     }
 
     .button-1 {
@@ -3145,7 +3183,7 @@ select {
 }
 
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 55em) {
 
   .slider {
     position: relative;
